@@ -9,7 +9,7 @@ from sklearn.linear_model import LogisticRegression
 import warnings
 warnings.filterwarnings("ignore")
 
-data = pd.read_csv("./heart disease classification dataset.csv")
+data = pd.read_csv("./heart.csv")
 
 numeric_columns = data.select_dtypes(include='number')
 data[numeric_columns.columns] = data[numeric_columns.columns].fillna(numeric_columns.mean())
